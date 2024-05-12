@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".presentation.story.detail.DetailStoryActivity">
+
+    <ImageView
+        android:id="@+id/imgStoryThumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="247dp"
+        android:transitionName="thumbnail"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@color/colorGrey" />
+
+    <TextView
+        android:id="@+id/tvStoryTitle"
+        style="@style/StoryTextContent.Title"
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_16dp"
+        android:textSize="@dimen/dimen_24sp"
+        android:transitionName="title"
+        tools:text="Story Title" />
+
+    <TextView
+        android:id="@+id/tvStoryDesc"
+        android:layout_width="match_parent"
+        android:layout_height="191dp"
+        android:layout_marginHorizontal="@dimen/dimen_16dp"
+        android:transitionName="description"
+        tools:text="@string/label_lorem_ipsum" />
+
+</LinearLayout>
